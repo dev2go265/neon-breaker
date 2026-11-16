@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Neon Breaker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <h1 class="title">NEON BREAKER</h1>
+  <p class="tagline">Smash all 40 bricks. Don't let the ball past your paddle. 3 lives.</p>
+  <div class="game-box">
+    <canvas id="game" width="640" height="720" aria-label="Neon Breaker game"></canvas>
+    <div class="hud" id="hud">
+      <span id="hud-score">Score: 0</span>
+      <span id="hud-lives">Lives: ♥♥♥</span>
+      <span id="hud-bricks">Bricks: 40</span>
+    </div>
+  </div>
+  <div class="settings">
+    <label for="sens">Paddle Sensitivity: <span id="sens-val">1.0x</span></label>
+    <input id="sens" type="range" min="0.5" max="2" step="0.1" value="1">
+  </div>
+  <div class="controls">
+    <p><strong>Move paddle:</strong> Arrow keys / A,D, or drag with mouse / finger</p>
+    <p><strong>Launch / Start:</strong> Space or Enter &nbsp;•&nbsp; <strong>Pause:</strong> P &nbsp;•&nbsp; <strong>Mute:</strong> M</p>
+    <button id="start-btn" type="button">Play</button>
+  </div>
+  <p class="foot">A tiny game, drawn entirely in code. No downloads, no sign-up.</p>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
